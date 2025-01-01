@@ -58,6 +58,7 @@ const FileUploader = ({ ownerId, accountId, className }: Props) => {
 
       await Promise.all(uploadPromises);
     },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [ownerId, accountId, path]
   );
 
